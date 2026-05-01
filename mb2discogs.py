@@ -23,7 +23,7 @@ MUSIC_DIR        = "/path/to/your/music"
 DISCOGS_TOKEN    = "YOUR_DISCOGS_TOKEN"
 DISCOGS_USERNAME = "YOUR_DISCOGS_USERNAME"
 
-# Set to False when ready to write to your Discogs collection
+# set to "False" when ready to write to your Discogs collection
 DRY_RUN = True
 
 # ─── Constants ────────────────────────────────────────────────────────────────
