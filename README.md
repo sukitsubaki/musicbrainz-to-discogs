@@ -40,7 +40,7 @@ Open `mb2discogs.py` and set the following variables at the top:
 MUSIC_DIR        = "/path/to/your/music"
 DISCOGS_TOKEN    = "your_discogs_token"   # discogs.com → Settings → Developers
 DISCOGS_USERNAME = "your_username"
-DRY_RUN          = True                   # set to False when ready
+DRY_RUN          = True                   # set to "False" when ready
 ```
 
 ## Usage
