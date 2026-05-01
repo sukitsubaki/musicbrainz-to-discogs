@@ -46,11 +46,11 @@ DRY_RUN          = True                   # set to False when ready
 ## Usage
 
 ```bash
-# Preview what would be added (safe, no changes made)
+# preview what would be added (safe, no changes made)
 python mb2discogs.py
 
-# Actually add to your Discogs collection
-# (set DRY_RUN = False in the script first)
+# actually add to your Discogs collection
+# set DRY_RUN = False in the script first
 python mb2discogs.py
 ```
 
