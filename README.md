@@ -81,6 +81,9 @@ Albums not found (add manually on Discogs):
 - **Duplicates**: Already-added releases are skipped gracefully.
 - **macOS users**: `._` AppleDouble metadata files are automatically ignored.
 
+## Acknowledgements
+This script was inspired by my friend [svetixoxo](https://github.com/svetixoxo), who wanted to sync her own MusicBrainz-tagged library to Discogs and sparked the idea to build a little tool for it.
+
 ## License
 
 [MIT License](LICENSE)
