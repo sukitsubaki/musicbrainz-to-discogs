@@ -2,13 +2,13 @@
 
 Automatically sync your MusicBrainz-tagged music library to your Discogs collection.
 
-If you use [MusicBrainz Picard](https://github.com/metabrainz/picard) to tag your music, this script reads the embedded MusicBrainz Release IDs from your files, looks up the corresponding Discogs release via the MusicBrainz API, and adds it to your Discogs collection — no manual searching required.
+If you use [MusicBrainz Picard](https://github.com/metabrainz/picard) to tag your music, this script reads the embedded MusicBrainz Release IDs from your files, looks up the corresponding Discogs release via the MusicBrainz API, and adds it to your Discogs collection – no manual searching required.
 
 ## Features
 
 - Supports FLAC, MP3, OGG, Opus, M4A
 - Scans your library folder recursively, one lookup per album
-- Resolves MusicBrainz Release IDs → Discogs Release IDs via the MB API
+- Resolves MusicBrainz Release IDs → Discogs Release IDs via the MusicBrainz API
 - Adds matched releases to your Discogs collection (folder: *Uncategorized*)
 - Dry-run mode to preview matches before making any changes
 - Respects MusicBrainz API rate limits (1 req/s)
