@@ -1,7 +1,7 @@
 # musicbrainz-to-discogs
 Automatically sync your MusicBrainz-tagged music library to your Discogs collection.
 
-If you use [MusicBrainz Picard](https://github.com/metabrainz/picard) to tag your music, this script reads the embedded MusicBrainz Release IDs from your files, looks up the corresponding Discogs release via the MusicBrainz API and adds it to your Discogs collection — no manual searching required.
+If you use [MusicBrainz Picard](https://github.com/metabrainz/picard) to tag your music, this script reads the embedded MusicBrainz Release IDs from your files, looks up the corresponding Discogs release via the MusicBrainz API and adds it to your Discogs collection – no manual searching required.
 
 ## Features
 
