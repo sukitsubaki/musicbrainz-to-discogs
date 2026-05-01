@@ -6,19 +6,19 @@ If you use [MusicBrainz Picard](https://github.com/metabrainz/picard) to tag you
 
 ## Features
 
-- Supports FLAC, MP3, OGG, Opus, M4A
-- Scans your library folder recursively, one lookup per album
-- Resolves MusicBrainz Release IDs → Discogs Release IDs via the MusicBrainz API
-- Adds matched releases to your Discogs collection (folder: *Uncategorized*)
-- Dry-run mode to preview matches before making any changes
-- Respects MusicBrainz API rate limits (1 req/s)
-- Reports unmatched albums at the end for manual follow-up
+- supports FLAC, MP3, OGG, Opus, M4A
+- scans your library folder recursively, one lookup per album
+- resolves MusicBrainz Release IDs → Discogs Release IDs via the MusicBrainz API
+- adds matched releases to your Discogs collection (folder: *Uncategorized*)
+- dry-run mode to preview matches before making any changes
+- respects MusicBrainz API rate limits (1 req/s)
+- reports unmatched albums at the end for manual follow-up
 
 ## Requirements
 
 - Python 3.8+
-- A Discogs account with an API token
-- Music tagged with MusicBrainz Picard (so files have a `musicbrainz_albumid` tag)
+- a Discogs account with an API token
+- music tagged with MusicBrainz Picard (so files have a `musicbrainz_albumid` tag)
 
 ## Installation
 
@@ -80,6 +80,12 @@ Albums not found (add manually on Discogs):
 - **Runtime**: ~1 second per album due to API rate limiting (1.000 albums ≈ 17 minutes).
 - **Duplicates**: Already-added releases are skipped gracefully.
 - **macOS users**: `._` AppleDouble metadata files are automatically ignored.
+
+## Limitations
+
+- releases are always added to the "Uncategorized" folder; moving them into custom Discogs folders has to be done manually
+- the script does not distinguish between physical (CD, vinyl) and digital releases yet; it simply matches whatever MusicBrainz links to Discogs
+- if a release exists on Discogs but has no link in MusicBrainz, it won't be found automatically and has to be added manually
 
 ## Acknowledgements
 This script was inspired by my friend [svetixoxo](https://github.com/svetixoxo), who wanted to sync her own MusicBrainz-tagged library to Discogs and sparked the idea to build a little tool for it.
